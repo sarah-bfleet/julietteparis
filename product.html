@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <title>Juliette Paris</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="top-header">
+          <div class="lang">
+            <a href="#"><span>EN</span>/FR</a>
+          </div>
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="img/logo-julietteparis_blanc2.png"
+              alt="JU Logo"
+          /></a>
+
+          <div class="search-container">
+            <i class="fa fa-search" id="search-icon"></i>
+            <i class="fas fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+
+        <nav class="wrapper navbar">
+          <ul>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Wedding</a></li>
+            <li><a href="#">Tailored</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- SHOPPING CART PREVIEW MOBILE -->
+
+    <div class="shopping-cart-mobile wrapper">
+      <div class="mobile-cart-header">
+        <span>Added to Bag</span>
+        <i class="fas fa-times"></i>
+      </div>
+
+      <div class="item-details-mobile">
+        <div class="mobile-price-img">
+          <img src="img/ring-cart.jpg" alt="" />
+        </div>
+        <div class="mobile-cart-item-info">
+          <span>Ring in white gold with diamonds</span>
+          <span class="reference-mobile">Reference: J0001W</span>
+          <span class="size-mobile">Size: 46</span>
+          <span>&euro;1180</span>
+        </div>
+      </div>
+
+      <a class="shopping-cart-btn" href="">View Bag</a>
+    </div>
+
+    <!--SHOPPING CART PREVIEW DESKTOP -->
+
+    <div class="shopping-cart">
+      <!-- shopping cart header -->
+      <div class="shopping-cart-header">
+        <div class="back">
+          <i class="arrow left"></i>
+          <span>back</span>
+        </div>
+        <div class="quantity">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge">2 items</span>
+        </div>
+      </div>
+
+      <!-- shopping cart heading and list -->
+      <span class="cart-title">your cart</span>
+      <ul class="shopping-cart-items">
+        <li class="shopping-cart-item">
+          <div class="item-info">
+            <span class="item-name">Ring in white gold with diamonds</span>
+            <span class="reference">Reference: J0001W</span>
+            <span class="size">Size: 46</span>
+            <div class="delete-box">
+              <i class="fas fa-times"></i><span class="delete">Delete</span>
+            </div>
+          </div>
+          <div class="price">
+            <span class="item-price">&euro;780.00</span>
+          </div>
+        </li>
+
+        <li class="shopping-cart-item">
+          <div class="item-info">
+            <span class="item-name">White Gold Bracelet with Diamonds</span>
+            <span class="reference">Reference: J0016W</span>
+            <span class="size">Size: XS</span>
+            <div class="delete-box">
+              <i class="fas fa-times"></i><span class="delete">Delete</span>
+            </div>
+          </div>
+          <div class="price">
+            <span class="item-price">&euro;1180.00</span>
+          </div>
+        </li>
+      </ul>
+      <!-- shopping cart actions/buttons -->
+      <div class="shopping-cart-buttons">
+        <a class="shopping-cart-btn" href="">view and edit cart</a>
+        <a class="shopping-cart-btn" href="">go to checkout</a>
+      </div>
+    </div>
+
+    <main>
+      <section class="product-info wrapper">
+        <div class="product-images">
+          <img src="img/ring-pic.JPG" alt="" />
+        </div>
+
+        <div class="product-details">
+          <h1>Engagement Ring in White Gold with Lab-Grown Diamond</h1>
+          <p>REFERENCE<span class="fade-bg reference-num">#JP001W25</span></p>
+          <p class="description">
+            The most elegant model in the Ju Paris collection with a diamond
+            created in a laboratory. Four smooth and rounded claws embrace the
+            diamond, letting it shine across all its facets. The round edges of
+            the band with its single green ceramic line is a symbol of the JU
+            Paris brand. The model is available in the following diamond sizes :
+            0.25, 0.35, 0.50, 0.65, 0.85 and 1.00 carat, in three gold colors.
+          </p>
+          <p>
+            DESCRIPTION: <br />
+            <span class="description"
+              >0.25 ct lab-grown diamond <br />
+              green ceramic</span
+            >
+          </p>
+
+          <div class="diamond-weight-form fade-bg">
+            <form action="">
+              <label for="diamond-weight"
+                >PRICE DEPENDS ON WEIGHT OF DIAMOND:</label
+              >
+              <select name="diamond-weight" id="diamond-weight">
+                <option value="211">0.25</option>
+                <option value="186">0.35</option>
+                <option value="219">0.50</option>
+                <option value="231">0.65</option>
+                <option value="232">0.85</option>
+                <option value="194">1.00</option>
+              </select>
+            </form>
+          </div>
+
+          <p>PRICE: 500 &euro;</p>
+          <button class="bag-btn">ADD TO BAG</button>
+          <p>
+            You can find more pictures in instagram with hashtag
+            <span class="fade-bg insta-ref">#JP001W25</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="other-options">
+        <div class="colors">
+          <h2>OTHER COLORS</h2>
+          <div id="arrow-left-colors" class="arrow hide-arrow"></div>
+          <ul class="color-options">
+            <li>
+              <img src="img/pink-gold.png" alt="" />
+            </li>
+            <li>
+              <img class="hide" src="img/yellow-gold.png" alt="" />
+            </li>
+          </ul>
+          <div id="arrow-right-colors" class="arrow hide-arrow"></div>
+        </div>
+        <div class="models">
+          <h2>ALL MODELS</h2>
+          <div id="arrow-left-models" class="arrow hide-arrow"></div>
+          <ul class="all-models">
+            <li>
+              <img src="img/ring4.png" alt="" />
+            </li>
+            <li>
+              <img class="hide" src="img/ring4.png" alt="" />
+            </li>
+            <li>
+              <img class="hide" src="img/ring4.png" alt="" />
+            </li>
+            <li>
+              <img class="hide" src="img/ring4.png" alt="" />
+            </li>
+          </ul>
+          <div id="arrow-right-models" class="arrow hide-arrow"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrapper">
+      <div class="col-1">
+        <h3>Contacts</h3>
+        <ul class="contacts">
+          <li><a href="#">Delivery & Retour</a></li>
+          <li><a href="#">Questions</a></li>
+          <li><a href="#">Public Offert</a></li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <address>
+          <a href="mailto:info@juparis.com">info@juparis.com</a><br />
+          <p>14 rue Tronchet, Paris, 75008</p>
+        </address>
+        <div class="social">
+          <p>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          </p>
+          <p>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </p>
+          <p>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </p>
+          <p>
+            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+          </p>
+        </div>
+      </div>
+
+      <form class="subscribe-form" action="action_page.php">
+        <div class="footer-col-3">
+          <h3>Subscribe to the newsletter</h3>
+        </div>
+        <input type="text" name="name" value="Your email" class="user-email" />
+        <button type="submit" class="subscribe-btn">Subscribe</button>
+      </form>
+    </footer>
+  </body>
+</html>
