@@ -88,9 +88,8 @@ textarea {
 }
 
 /* ==========================================================================
-     
      Author's custom styles
-     ========================================================================== */
+     ========================================================================= */
 * {
   box-sizing: border-box;
 }
@@ -287,9 +286,19 @@ address a:hover {
   color: #978683;
 }
 
-/*========================
- SHOPPING CART MOBILE
- =========================*/
+/*=========================
+  TAILORED PAGE
+  ==========================*/
+
+video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+/*==========================
+ SHOPPING CART MOBILE PREVIEW 
+ ===========================*/
 
 .shopping-cart {
   display: none;
@@ -533,9 +542,9 @@ address a:hover {
     margin-right: 100px;
   }
 
-  /* =======================
+  /* ==================================
          FOOTER 
-    =========================*/
+    ===================================*/
 
   footer {
     font-size: 36px;
@@ -563,9 +572,9 @@ address a:hover {
     padding: 0 120px;
   }
 
-  /*==================
+  /*=========================
   TAILORED PAGE
-  ===================*/
+  ==========================*/
 
   .tailored-main {
     display: flex;
@@ -585,11 +594,6 @@ address a:hover {
 
   .tailored-main-text p {
     margin: 0;
-  }
-
-  video {
-    width: 100%;
-    height: auto;
   }
 
   .tailored-overlap {
@@ -654,89 +658,9 @@ address a:hover {
     height: 300px;
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-  }
-
-  .practice-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .box3,
-  .box4 {
-    width: 250px;
-    height: 250px;
-    border: 1px solid #8f7463;
-  }
-  .box2 {
-    width: 420px;
-    height: 540px;
-    margin: 0 20px;
-  }
-
-  .practice2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: #c5b8b5;
-    height: 100vh;
-  }
-
-  .left-side {
-    width: 40%;
-    position: relative;
-  }
-
-  .right-side {
-    width: 20%;
-    position: relative;
-  }
-
-  .img6 {
-    position: absolute;
-    bottom: 5px;
-    left: 100px;
-  }
-
-  .img5 {
-    position: absolute;
-    top: 0px;
-    right: 100px;
-  }
-
-  .practice2 h2 {
-    color: white;
-    transform: rotate(-90deg);
-    margin: 0;
-    position: absolute;
-    bottom: 290px;
-    left: -220px;
-  }
-
-  .middle-text {
-    color: gray;
-    width: 35%;
-    display: inline;
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    border-radius: 4px;
-    padding: 5px;
-    line-height: 1.2;
-  }
-
-  .middle-text h2 {
-    margin: 0;
-    text-align: left;
-  }
-
-  .middle-text p {
-    margin: 0;
-  }
+  /*============================
+  PRODUCT PAGE
+  ==============================*/
 
   .product-info {
     display: flex;
@@ -752,7 +676,9 @@ address a:hover {
     margin-top: 0;
   }
 
-  /* SHOPPING CART */
+  /*============================
+  SHOPPING CART PREVIEW DESKTOP
+  =============================*/
 
   .shopping-cart-mobile {
     display: none;
@@ -806,13 +732,13 @@ address a:hover {
     -webkit-transform: rotate(135deg);
   }
 
-  .shopping-cart-btn:hover {
-    background-color: #978683;
-    color: white;
+  .cart-title {
+    margin: 40px 0 20px;
+    font-size: 24px;
   }
 
-  .shopping-cart-buttons {
-    margin-top: 130px;
+  .shopping-cart-item span {
+    display: block;
   }
 
   .shopping-cart-item {
@@ -820,9 +746,21 @@ address a:hover {
     margin: 20px 0;
   }
 
-  .cart-title {
-    margin: 40px 0 20px;
-    font-size: 24px;
+  .item-info,
+  .price {
+    font-size: 17px;
+  }
+
+  .price {
+    margin-left: 30px;
+  }
+
+  .delete-box {
+    display: flex;
+    align-items: center;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-top: 5px;
   }
 
   .delete {
@@ -838,24 +776,12 @@ address a:hover {
     text-transform: capitalize;
   }
 
-  .delete-box {
-    display: flex;
-    align-items: center;
-    font-weight: lighter;
-    font-size: 14px;
-    margin-top: 5px;
+  .shopping-cart-buttons {
+    margin-top: 130px;
   }
 
-  .item-info,
-  .price {
-    font-size: 17px;
-  }
-
-  .price {
-    margin-left: 30px;
-  }
-
-  .shopping-cart-item span {
-    display: block;
+  .shopping-cart-btn:hover {
+    background-color: #978683;
+    color: white;
   }
 }
