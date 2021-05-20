@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juliette Paris | Create Account</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="signup-modal">
+      <form action="" class="modal-content"></form>
+      <div class="modal-container">
+        <h1>Create New Customer Account</h1>
+        <p class="text-uppercase">Personal Information</p>
+
+        <div class="name">
+          <select name="sal">
+            <option selected="selected" value="M.">M.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Miss">Miss</option>
+            <option value="Mr.">Mr.</option>
+          </select>
+
+          <label for="first-name"></label>
+          <input id="first-name" type="text" placeholder="First Name" />
+          <span class="required">*</span>
+          <label for="last-name"></label>
+          <input id="last-name" type="text" placeholder="Last Name" /><span
+            class="required"
+            >*</span
+          >
+          <br />
+        </div>
+        <div class="birthdate">
+          <label for="birthday"></label>
+          <input type="date" id="birthday" name="birthday" /> <br />
+        </div>
+
+        <input type="checkbox" />
+        <span class="text-uppercase">Sign up for Newsletter</span>
+        <hr />
+        <p class="text-uppercase">Sign-In Information</p>
+        <label for="email"></label>
+        <input id="email" type="text" placeholder="Email" /> <br />
+
+        <div class="password-container">
+          <label for="password"></label>
+          <input id="password" type="text" placeholder="Password" />
+          <label for="confirm-password"></label>
+          <input
+            id="confirm-password"
+            type="text"
+            placeholder="Confirm Password"
+          />
+        </div>
+
+        <br />
+        <input type="checkbox" />
+        <span class="text-uppercase">Remember Me</span>
+        <div class="modal-actions">
+          <div class="back">
+            <i class="fas fa-angle-left"></i>
+            <span>Back</span>
+          </div>
+          <div>
+            <a class="modal-btn" href="">Create An Account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

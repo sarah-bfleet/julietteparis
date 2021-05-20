@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Cart | Juliette Paris</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../main.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -24,7 +24,7 @@
           <a href="index.html"
             ><img
               class="logo"
-              src="img/logo-julietteparis_blanc2.png"
+              src="../img/logo-julietteparis_blanc2.png"
               alt="JU Logo"
           /></a>
 
@@ -39,7 +39,7 @@
           <ul>
             <li><a href="#">Jewelry</a></li>
             <li><a href="#">Wedding</a></li>
-            <li><a href="tailored.html">Tailored</a></li>
+            <li><a href="../tailored.html">Tailored</a></li>
             <li><a href="#">Contacts</a></li>
           </ul>
         </nav>
@@ -62,7 +62,7 @@
         <i class="fas fa-times"></i>
         <div class="card-cols">
           <div class="card-col-1">
-            <img src="img/ring-cart.jpg" alt="" />
+            <img src="../img/ring-cart.jpg" alt="" />
           </div>
           <div class="card-col-2">
             <h5 class="text-uppercase">Ring Sweet Paris</h5>
@@ -84,23 +84,23 @@
         <div class="cart-upper-header">
           <a href="#">
             <span class="text-uppercase">
-              <i class="arrow-cart left"></i>Continue Shopping</span
+              <i class="arrow-cart left"></i>Retour a la page d'accueil</span
             >
           </a>
 
           <a class="shopping-cart-btn text-uppercase" href="#"
-            >Proceed to Checkout</a
+            >Valider mon panier</a
           >
         </div>
 
         <div class="products-container">
-          <h1 class="text-uppercase">Checkout Cart</h1>
+          <h1 class="text-uppercase">Panier</h1>
           <div class="product-header text-uppercase">
-            <h5 class="product-title">Product</h5>
-            <h5 class="product-price">Price</h5>
-            <h5 class="product-qty">Qty</h5>
-            <h5 class="subtotal">Subtotal</h5>
-            <h5 class="delete-product">Del</h5>
+            <h5 class="product-title">Produit</h5>
+            <h5 class="product-price">Prix</h5>
+            <h5 class="product-qty">Qte</h5>
+            <h5 class="subtotal">Sous-total</h5>
+            <h5 class="delete-product">Suppr</h5>
           </div>
 
           <!-- SHOPPING CART ITEMS
@@ -109,13 +109,13 @@
             <ul>
               <li class="product-title">
                 <div class="product-img-div">
-                  <img src="img/ring-cart.jpg" alt="" />
+                  <img src="../img/ring-cart.jpg" alt="" />
                 </div>
 
                 <div class="product-description">
-                  <h5 class="text-uppercase">Ring Sweet Paris</h5>
-                  <span>Pink gold</span>
-                  <span>Total weight of diamonds: ___ </span>
+                  <h5 class="text-uppercase">Bague Sweet Paris</h5>
+                  <span>Or rose</span>
+                  <span>Poids total des diamants: ___ </span>
                   <span>Size: </span>
                 </div>
               </li>
@@ -192,19 +192,19 @@
         <!-- BEGIN CART TOTALS -->
         <div class="cart-totals text-uppercase">
           <div class="line-item cart-sub-ship">
-            <h5 class="cart-subtotal">Subtotal</h5>
+            <h5 class="cart-subtotal">Sous-total</h5>
             <span>1960 &euro;</span>
           </div>
 
           <div class="line-item line-item-middle">
             <h5 class="cart-ship">
-              Shipping (Transporteur France Express - France ET Europe)
+              Livraison (Transporteur France Express - France ET Europe)
             </h5>
-            <span>Offered</span>
+            <span>Offert</span>
           </div>
 
           <div class="line-item">
-            <h5 class="cart-total">Order Total Incl. Tax</h5>
+            <h5 class="cart-total">Total TTC</h5>
             <span>1960 &euro;</span>
           </div>
         </div>
@@ -213,7 +213,7 @@
         <div class="cart-bottom">
           <div class="discount-section">
             <input type="checkbox" id="checkbox" />
-            <label for="promocode">Apply Discount Code</label>
+            <label for="promocode">Ajouter un code de reduction</label>
             <input type="text" id="promocode" />
           </div>
 
@@ -222,7 +222,7 @@
               class="shopping-cart-btn text-uppercase"
               id="checkout-btn"
               href="#"
-              >Proceed to Checkout</a
+              >valider mon panier</a
             >
           </div>
         </div>
@@ -232,27 +232,29 @@
       <!--BEGINNING OF COLUMN TWO/DELIVERY & ONLINE BENEFITS SECTION -->
       <div class="column-two">
         <div class="delivery-options">
-          <h3 class="text-uppercase">Options of Delivery</h3>
-          <p>According to the stock we offer two possibilities to order:</p>
+          <h3 class="text-uppercase">Options de livraison</h3>
+          <p>Selon le stock nous offrons deux possibilités de commande:</p>
           <ul>
-            <li><i class="fas fa-calendar-alt"></i> Order online 6-8 weeks</li>
+            <li>
+              <i class="fas fa-calendar-alt"></i>Commande en ligne 6-8 semaines
+              apres paiement
+            </li>
             <li>
               <i class="fas fa-handshake"></i>
-              Order from our distributor's shop. Terms are subject to
-              availability.
+              Commande a la boutique du distributeur. Depend du stock.
             </li>
           </ul>
         </div>
         <div class="online-benefits">
-          <h3 class="text-uppercase">Online Benefits</h3>
+          <h3 class="text-uppercase">Vos Services</h3>
           <ul>
-            <li><i class="fas fa-shipping-fast"></i> Free delivery</li>
-            <li><i class="fas fa-undo"></i> Returns within 14 days</li>
+            <li><i class="fas fa-shipping-fast"></i> Livraison offerte</li>
+            <li><i class="fas fa-undo"></i> Retours sous 14 jours</li>
             <li>
-              <i class="far fa-credit-card"></i> Payment by credit card and
-              Paypal
+              <i class="far fa-credit-card"></i> Paiement par carte bancaire et
+              PayPal
             </li>
-            <li><i class="fas fa-lock"></i> 100% secure payment</li>
+            <li><i class="fas fa-lock"></i> Paiement 100% securise</li>
           </ul>
         </div>
       </div>
@@ -305,24 +307,26 @@
 
         <div class="modal-cols">
           <div class="modal-col modal-col-1">
-            <h3 class="text-uppercase">Checkout as a new customer</h3>
+            <h3 class="text-uppercase">Commander en tant que nouveau client</h3>
             <p class="benefits-header">
-              Creating an account has many benefits:
+              Créer un compte présente de nombreux avantages:
             </p>
             <ul class="benefits-list">
-              <li>See order and shipping status</li>
-              <li>Track Order history</li>
-              <li>Check out faster</li>
+              <li>Voir le statut de la commande et le statut de livraison</li>
+              <li>Suivi de la commande</li>
+              <li>Commander plus rapidement</li>
             </ul>
             <button class="create-acct-btn text-uppercase">
-              Create an Account
+              Creer un compte
             </button>
           </div>
           <div class="modal-col modal-col-2">
-            <span class="modal-center"> OR </span>
+            <span class="modal-center"> OU </span>
           </div>
           <div class="modal-col modal-col-3">
-            <h3 class="text-uppercase">Checkout using your account</h3>
+            <h3 class="text-uppercase">
+              Passer Commande en utilisant votre compte
+            </h3>
             <form action="">
               <label for="username" id="username" class="modal-label"></label>
               <input class="modal-input" type="text" placeholder="Email" />
@@ -334,9 +338,9 @@
                 placeholder="Password"
               />
 
-              <a id="pw-reset" href="#">Forgot Your Password?</a>
+              <a id="pw-reset" href="#">Mot de passe oublié?</a>
 
-              <button>SIGN IN</button>
+              <button>S'identifier</button>
             </form>
           </div>
         </div>
