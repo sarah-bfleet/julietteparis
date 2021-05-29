@@ -861,6 +861,52 @@ input {
   padding: 5px 12px;
 }
 
+.width1 {
+  width: 20%;
+}
+
+.width2 {
+  width: 60%;
+}
+
+.cart-details-top {
+  margin-top: 50px;
+}
+
+.cart-details-bottom {
+  margin: 80px 0 50px;
+}
+
+.payment-checkbox {
+  display: flex;
+}
+
+.details-container li:nth-of-type(1) {
+  font-weight: bolder;
+}
+
+.li-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-summary-top {
+  border-bottom: 1px solid #c5b8b5;
+}
+
+.order-summary-top li {
+  margin-bottom: 12px;
+}
+
+.order-summary-top li:nth-of-type(4) {
+  margin-bottom: 0;
+}
+
+.order-summary-top li:nth-of-type(4),
+.order-summary-top li:nth-of-type(5) {
+  font-weight: bold;
+}
+
 /* ====================================
      ==================================
        Media Queries - Smaller Tablet 
@@ -1714,7 +1760,15 @@ input {
   }
 
   .cart-details {
-    width: 70%;
+    width: 60%;
     margin-right: 50px;
+  }
+
+  .order-summary-container {
+    width: 40%;
+  }
+
+  .details-container {
+    display: flex;
   }
 }

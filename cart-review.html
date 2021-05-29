@@ -53,10 +53,10 @@
             <li class="not-current">
               <a href="cart.html">1. Shopping Cart</a>
             </li>
-            <li class="current">
+            <li class="not-current">
               <a href="shipping.html"> 2. Shipping</a>
             </li>
-            <li class="not-current">
+            <li class="current">
               <a href="cart-review.html">3. Review & Payments</a>
             </li>
           </ul>
@@ -66,6 +66,31 @@
           <div class="cart-details">
             <div class="cart-details-top">
               <h2>Details</h2>
+              <ul class="details-container">
+                <li class="width1 text-uppercase">Contact</li>
+                <li class="width2">example.name@gmail.com</li>
+                <li class="width1">edit</li>
+              </ul>
+              <ul class="details-container">
+                <li class="width1 text-uppercase">Ship To</li>
+                <li class="width2">
+                  Example Name
+                  <br />
+                  <span>4 City Dr.</span><br /><span
+                    >La Baule-Escoublac, 44500</span
+                  ><br /><span>France</span><br /><span>0782838528</span>
+                </li>
+
+                <li class="width1">edit</li>
+              </ul>
+              <ul class="details-container">
+                <li class="width1 text-uppercase">Shipping</li>
+                <li class="width2">
+                  Transporteur France Express - France et Europe
+                </li>
+
+                <li class="width1">edit</li>
+              </ul>
             </div>
             <div class="cart-details-bottom">
               <!-- PAYMENT METHODS -->
@@ -121,11 +146,36 @@
 
           <div class="order-summary-container">
             <h2>Order Summary</h2>
+            <div class="order-summary-top">
+              <ul>
+                <li class="li-flex">
+                  <span>Cart Subtotal</span>
+                  <span>&euro; 1960</span>
+                </li>
+                <li class="li-flex">
+                  <span>Shipping</span>
+                  <span>Offered</span>
+                </li>
+                <li class="li-flex">
+                  <span>Tax (20%)</span>
+                  <span>&euro; 327</span>
+                </li>
+                <li class="li-flex">
+                  <span class="text-uppercase">Order Total Excl. Tax</span>
+                  <span>&euro; 1633</span>
+                </li>
+                <li class="li-flex">
+                  <span class="text-uppercase">Order Total Incl. Tax</span>
+                  <span>&euro; 1960</span>
+                </li>
+              </ul>
+            </div>
+
             <ul class="order-summary-items">
               <li class="order-summary-item">
                 <div class="item-details">
                   <span class="name-of-item">Bague Sweet Paris</span>
-                  <span class="color">Pink Gold</span>
+                  <span class="color">Qty: 1</span>
                   <span class="item-size">Size: 47</span>
                 </div>
                 <div class="price-div">
@@ -136,7 +186,7 @@
               <li class="order-summary-item">
                 <div class="item-details">
                   <span class="name-of-item">Bague Sweet Paris</span>
-                  <span class="color">Pink Gold</span>
+                  <span class="color">Qty: 1</span>
                   <span class="item-size">Size: 47</span>
                 </div>
                 <div class="price-div">
@@ -144,18 +194,17 @@
                 </div>
               </li>
 
-              <li class="order-summary-item">
+              <!-- <li class="order-summary-item">
                 <div class="item-details">
                   <span class="name-of-item">Bague Sweet Paris</span>
-                  <span class="color">Pink Gold</span>
+                  <span class="color">Qty: 1</span>
                   <span class="item-size">Size: 47</span>
                 </div>
                 <div class="price-div">
                   <span class="price-of-item">&euro; 980.00</span>
                 </div>
-              </li>
+              </li> -->
             </ul>
-            <span class="order-summary-total">Total Amount: &euro; 980.00</span>
           </div>
         </div>
       </div>
