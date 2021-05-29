@@ -700,7 +700,8 @@ input.comment {
   margin: 5px 0 10px;
 }
 
-.shipping-checkbox-div {
+.shipping-checkbox-div,
+.payment-checkbox {
   border: 1px solid #c5b8b5;
   font-size: 10px;
   margin-bottom: 5px;
@@ -838,6 +839,21 @@ input {
 .order-summary-total {
   display: block;
   text-align: right;
+}
+
+/*===============================
+      CART REVIEW PAGE - MOBILE  
+  ================================*/
+
+.paypal {
+  width: 60px;
+  height: 35px;
+  margin: 0 5px;
+}
+
+.fa-credit-card {
+  border: 1px solid #d3d3d3;
+  padding: 5px 12px;
 }
 
 /* ====================================
@@ -1624,10 +1640,15 @@ input {
     font-weight: bold;
   }
 
-  .shipping-checkbox-div {
+  .shipping-checkbox-div,
+  .payment-checkbox {
     display: flex;
     align-items: center;
     font-size: 12px;
+  }
+
+  .payment-checkbox i {
+    margin: 0 10px;
   }
 
   .delivery-cost-container {
@@ -1676,5 +1697,19 @@ input {
 
   .submit-btn {
     font-size: 14px;
+  }
+
+  /*===============================
+      CART REVIEW PAGE - DESKTOP 
+  ================================*/
+
+  .cart-review-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cart-details {
+    width: 70%;
+    margin-right: 50px;
   }
 }
