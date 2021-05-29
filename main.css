@@ -661,6 +661,11 @@ h2 {
   font-weight: 100;
 }
 
+.current a,
+.not-current a {
+  color: #c5b8b5;
+}
+
 .shipping-container input,
 select {
   width: 100%;
