@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../main.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -24,7 +24,7 @@
           <a href="index.html"
             ><img
               class="logo"
-              src="img/logo-julietteparis_blanc2.png"
+              src="../img/logo-julietteparis_blanc2.png"
               alt="JU Logo"
           /></a>
 
@@ -51,13 +51,13 @@
         <div class="shipping-header">
           <ul class="shipping-header-list">
             <li class="not-current">
-              <a href="cart.html">1. Shopping Cart</a>
+              <a href="cart.html">1. Panier</a>
             </li>
             <li class="current">
-              <a href="#">2. Shipping</a>
+              <a href="#">2. Livraison</a>
             </li>
             <li class="not-current">
-              <a href="cart-review.html">3. Review & Payments</a>
+              <a href="cart-review.html">3. Confirmation & Paiement</a>
             </li>
           </ul>
         </div>
@@ -65,12 +65,17 @@
         <div class="shipping-container">
           <div class="shipping-details">
             <section class="shipping-methods">
-              <h1>Shipping Methods</h1>
-              <h3>1. Express 1-2 Weeks</h3>
-              <p class="extra-info">To send request to the nearest shop:</p>
+              <h1>Mode De Livraison</h1>
+              <h3>1. Express 1-2 Semaines</h3>
+              <p class="extra-info">
+                Envoyer la demande au distributeur le plus proche:
+              </p>
               <form action="">
                 <label for="distributors"></label>
                 <select name="distributors" id="distributors">
+                  <option value="liste de nos distributeurs">
+                    liste de nos distributeurs
+                  </option>
                   <option value="">distributor 1</option>
                   <option value="">distributor 2</option>
                   <option value="">distributor 3</option>
@@ -80,25 +85,25 @@
                 <input
                   class="comment"
                   type="text"
-                  value="add comment to your request"
+                  value="ajouter un commentaire à votre demande"
                 />
                 <br />
                 <input
                   class="ship-page-btn"
                   type="submit"
-                  value="send request"
+                  value="envoyer une demande"
                 />
               </form>
               <p>
-                Thank you for your request, our distributor will contact you
-                within 24 hours
+                Merci pour la demande. Notre distributeur vous contactera dans
+                les 24 heures.
               </p>
 
               <div class="shipping-options">
-                <h3>2. Standard Delivery 6-8 Weeks</h3>
+                <h3>2. Livraison standard 6-8 semaines</h3>
                 <p class="extra-info">
-                  Your jewelry will be produced according to the size and sent
-                  to your address by express.
+                  Vos bijoux seront produits sur-mesure et envoyes par livraison
+                  express.
                 </p>
                 <form class="standard-shipping" action="">
                   <div class="shipping-checkbox-div">
@@ -111,12 +116,14 @@
                     <label for="standard-shipping"
                       >Transporteur France Express
                       <span class="span-1">France et Europe</span
-                      ><span class="span-2">Free</span></label
+                      ><span class="span-2">Gratuite</span></label
                     >
                   </div>
 
                   <select id="country" name="country">
-                    <option>select country</option>
+                    <option>
+                      choisissez votre pays pour vérifier les frais de livraison
+                    </option>
                     <option value="AF">Afghanistan</option>
                     <option value="AX">Aland Islands</option>
                     <option value="AL">Albania</option>
@@ -384,9 +391,9 @@
                   </select>
                 </form>
                 <div class="delivery-cost-container">
-                  <span class="delivery-cost">Cost of Delivery:</span>
+                  <span class="delivery-cost">Frais de livraison:</span>
                   <span class="line-bottom"></span> <br />
-                  <span class="delivery-total">Total Amount:</span>
+                  <span class="delivery-total">Montant total:</span>
                   <span class="line-bottom"></span>
                 </div>
               </div>
@@ -394,7 +401,7 @@
 
             <!-- SHIPPING ADDRESS FORM -->
             <section class="shipping-address">
-              <h2>Shipping Address</h2>
+              <h2>Adresse de livraison</h2>
               <form class="shipping-address-form" action="">
                 <select name="sal">
                   <option selected="selected" value="M.">M.</option>
@@ -404,41 +411,41 @@
                 </select>
 
                 <label for="name"></label>
-                <input id="name" type="text" placeholder="Name" required />
+                <input id="name" type="text" placeholder="Nom" required />
                 <span class="asterisk asterisk1">*</span>
 
                 <label for="surname"></label>
                 <input
                   id="surname"
                   type="text"
-                  placeholder="Surname"
+                  placeholder="Nom de Famille"
                   required
                 />
                 <span class="asterisk asterisk2">*</span>
                 <label for="company"></label>
-                <input id="company" type="text" placeholder="Company" />
+                <input id="company" type="text" placeholder="Société" />
                 <label for="street-address-1"></label>
                 <input
                   id="street-address-1"
                   type="text"
-                  placeholder="Street Address 1"
+                  placeholder="Adresse 1"
                 />
                 <span class="asterisk asterisk3">*</span>
                 <label for="street-address-2"></label>
                 <input
                   id="street-address-2"
                   type="text"
-                  placeholder="Street Address 2"
+                  placeholder="Adresse 2"
                 />
                 <span class="asterisk asterisk4">*</span>
                 <label for="city"></label>
-                <input id="city" type="text" placeholder="City" required />
+                <input id="city" type="text" placeholder="Ville" required />
 
                 <label for="Zip Code"></label>
                 <input
                   id="zip-code"
                   type="text"
-                  placeholder="Zip Code"
+                  placeholder="Code Postal"
                   required
                 />
                 <span class="asterisk asterisk5">*</span>
@@ -446,7 +453,7 @@
                 <input
                   id="shipping-country"
                   type="text"
-                  placeholder="Country"
+                  placeholder="Pays"
                   required
                 />
                 <span class="asterisk asterisk6">*</span>
@@ -454,7 +461,7 @@
                 <input
                   id="phone"
                   type="text"
-                  placeholder="Phone Number"
+                  placeholder="Numéro de Téléphone"
                   required
                 />
                 <span class="asterisk asterisk7">*</span>
@@ -464,11 +471,11 @@
                   <div class="back-arrow">
                     <a class="back-to-cart" href="cart.html">
                       <i class="arrow left"></i>
-                      <span>Back to Cart</span>
+                      <span>Retour à la carte</span>
                     </a>
                   </div>
                   <a href="cart-review.html" class="submit-btn ship-page-btn"
-                    >Proceed to Payment</a
+                    >procéder au paiement</a
                   >
                 </div>
               </form>
@@ -476,13 +483,13 @@
           </div>
 
           <div class="order-summary-container">
-            <h2>Order Summary</h2>
+            <h2>Récapitulatif</h2>
             <ul class="order-summary-items">
               <li class="order-summary-item">
                 <div class="item-details">
                   <span class="name-of-item">Bague Sweet Paris</span>
-                  <span class="color">Pink Gold</span>
-                  <span class="item-size">Size: 47</span>
+                  <span class="color">Or Rose</span>
+                  <span class="item-size">Taille: 47</span>
                 </div>
                 <div class="price-div">
                   <span class="price-of-item">&euro; 980.00</span>
@@ -492,8 +499,8 @@
               <li class="order-summary-item">
                 <div class="item-details">
                   <span class="name-of-item">Bague Sweet Paris</span>
-                  <span class="color">Pink Gold</span>
-                  <span class="item-size">Size: 47</span>
+                  <span class="color">Or Rose</span>
+                  <span class="item-size">Taille: 47</span>
                 </div>
                 <div class="price-div">
                   <span class="price-of-item">&euro; 980.00</span>
@@ -503,15 +510,17 @@
               <li class="order-summary-item">
                 <div class="item-details">
                   <span class="name-of-item">Bague Sweet Paris</span>
-                  <span class="color">Pink Gold</span>
-                  <span class="item-size">Size: 47</span>
+                  <span class="color">Or Rose</span>
+                  <span class="item-size">Taille: 47</span>
                 </div>
                 <div class="price-div">
                   <span class="price-of-item">&euro; 980.00</span>
                 </div>
               </li>
             </ul>
-            <span class="order-summary-total">Total Amount: &euro; 980.00</span>
+            <span class="order-summary-total"
+              >Montant Total: &euro; 980.00</span
+            >
           </div>
         </div>
       </div>

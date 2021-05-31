@@ -77,68 +77,81 @@
 
     <!-- SHOPPING CART FOR DESKTOP -->
 
-    <main class="shopping-cart-main">
-      <!-- BEGINNING OF COLUMN ONE/CART -->
+    <main class="shopping-cart-wrapper">
+      <div class="shipping-header">
+        <ul class="shipping-header-list">
+          <li class="current">
+            <a href="cart-fr.html">1. Panier</a>
+          </li>
+          <li class="not-current">
+            <a href="shipping-fr.html"> 2. Livraison</a>
+          </li>
+          <li class="not-current">
+            <a href="cart-review-fr.html">3. Confirmation & Paiement</a>
+          </li>
+        </ul>
+      </div>
 
-      <div class="column-one">
-        <div class="cart-upper-header">
-          <a href="#">
-            <span class="text-uppercase">
-              <i class="arrow-cart left"></i>Retour a la page d'accueil</span
+      <section class="shopping-cart-main">
+        <div class="column-one">
+          <div class="cart-upper-header">
+            <a href="#">
+              <span class="text-uppercase">
+                <i class="arrow-cart left"></i>Retour a la page d'accueil</span
+              >
+            </a>
+
+            <a class="shopping-cart-btn text-uppercase" href="#"
+              >Valider mon panier</a
             >
-          </a>
-
-          <a class="shopping-cart-btn text-uppercase" href="#"
-            >Valider mon panier</a
-          >
-        </div>
-
-        <div class="products-container">
-          <h1 class="text-uppercase">Panier</h1>
-          <div class="product-header text-uppercase">
-            <h5 class="product-title">Produit</h5>
-            <h5 class="product-price">Prix</h5>
-            <h5 class="product-qty">Qte</h5>
-            <h5 class="subtotal">Sous-total</h5>
-            <h5 class="delete-product">Suppr</h5>
           </div>
 
-          <!-- SHOPPING CART ITEMS
-        BEGIN -->
-          <div class="products">
-            <ul>
-              <li class="product-title">
-                <div class="product-img-div">
-                  <img src="../img/ring-cart.jpg" alt="" />
-                </div>
+          <div class="products-container">
+            <h1 class="text-uppercase">Panier</h1>
+            <div class="product-header text-uppercase">
+              <h5 class="product-title">Produit</h5>
+              <h5 class="product-price">Prix</h5>
+              <h5 class="product-qty">Qte</h5>
+              <h5 class="subtotal">Sous-total</h5>
+              <h5 class="delete-product">Suppr</h5>
+            </div>
 
-                <div class="product-description">
-                  <h5 class="text-uppercase">Bague Sweet Paris</h5>
-                  <span>Or rose</span>
-                  <span>Poids total des diamants: ___ </span>
-                  <span>Size: </span>
-                </div>
-              </li>
-              <li class="product-price">980.00 &euro;</li>
-              <li class="product-qty">
-                <select name="qty" id="item-qty">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </li>
-              <li class="subtotal">980.00 &euro;</li>
-              <li class="delete-product"><i class="fas fa-times"></i></li>
-            </ul>
-            <!-- <ul>
+            <!-- SHOPPING CART ITEMS
+        BEGIN -->
+            <div class="products">
+              <ul>
+                <li class="product-title">
+                  <div class="product-img-div">
+                    <img src="../img/ring-cart.jpg" alt="" />
+                  </div>
+
+                  <div class="product-description">
+                    <h5 class="text-uppercase">Bague Sweet Paris</h5>
+                    <span>Or rose</span>
+                    <span>Poids total des diamants: ___ </span>
+                    <span>Size: </span>
+                  </div>
+                </li>
+                <li class="product-price">980.00 &euro;</li>
+                <li class="product-qty">
+                  <select name="qty" id="item-qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </li>
+                <li class="subtotal">980.00 &euro;</li>
+                <li class="delete-product"><i class="fas fa-times"></i></li>
+              </ul>
+              <!-- <ul>
               <li class="product-title">
                 <div class="product-img-div">
                   <img src="img/ring-cart.jpg" alt="" />
                 </div> -->
 
-            <!-- <div class="product-description">
+              <!-- <div class="product-description">
                   <h5 class="text-uppercase">Ring Sweet Paris</h5>
                   <span>Pink gold</span>
                   <span>Total weight of diamonds: ___ </span>
@@ -184,80 +197,81 @@
               <li class="subtotal">980.00 &euro;</li>
               <li class="delete-product"><i class="fas fa-times"></i></li>
             </ul> -->
+            </div>
+            <!--SHOPPING CART ITEMS ENDING DIV-->
           </div>
-          <!--SHOPPING CART ITEMS ENDING DIV-->
+          <!-- PRODUCTS CONTAINER ENDING DIV -->
+
+          <!-- BEGIN CART TOTALS -->
+          <div class="cart-totals text-uppercase">
+            <div class="line-item cart-sub-ship">
+              <h5 class="cart-subtotal">Sous-total</h5>
+              <span>1960 &euro;</span>
+            </div>
+
+            <div class="line-item line-item-middle">
+              <h5 class="cart-ship">
+                Livraison (Transporteur France Express - France ET Europe)
+              </h5>
+              <span>Offert</span>
+            </div>
+
+            <div class="line-item">
+              <h5 class="cart-total">Total TTC</h5>
+              <span>1960 &euro;</span>
+            </div>
+          </div>
+          <!-- CART TOTALS ENDING DIV -->
+
+          <div class="cart-bottom">
+            <div class="discount-section">
+              <input type="checkbox" id="checkbox" />
+              <label for="promocode">Ajouter un code de reduction</label>
+              <input type="text" id="promocode" />
+            </div>
+
+            <div class="checkout">
+              <a
+                class="shopping-cart-btn text-uppercase"
+                id="checkout-btn"
+                href="#"
+                >valider mon panier</a
+              >
+            </div>
+          </div>
         </div>
-        <!-- PRODUCTS CONTAINER ENDING DIV -->
+        <!--COLUMN ONE ENDING DIV-->
 
-        <!-- BEGIN CART TOTALS -->
-        <div class="cart-totals text-uppercase">
-          <div class="line-item cart-sub-ship">
-            <h5 class="cart-subtotal">Sous-total</h5>
-            <span>1960 &euro;</span>
+        <!--BEGINNING OF COLUMN TWO/DELIVERY & ONLINE BENEFITS SECTION -->
+        <div class="column-two">
+          <div class="delivery-options">
+            <h3 class="text-uppercase">Options de livraison</h3>
+            <p>Selon le stock nous offrons deux possibilités de commande:</p>
+            <ul>
+              <li>
+                <i class="fas fa-calendar-alt"></i>Commande en ligne 6-8
+                semaines apres paiement
+              </li>
+              <li>
+                <i class="fas fa-handshake"></i>
+                Commande a la boutique du distributeur. Depend du stock.
+              </li>
+            </ul>
           </div>
-
-          <div class="line-item line-item-middle">
-            <h5 class="cart-ship">
-              Livraison (Transporteur France Express - France ET Europe)
-            </h5>
-            <span>Offert</span>
-          </div>
-
-          <div class="line-item">
-            <h5 class="cart-total">Total TTC</h5>
-            <span>1960 &euro;</span>
-          </div>
-        </div>
-        <!-- CART TOTALS ENDING DIV -->
-
-        <div class="cart-bottom">
-          <div class="discount-section">
-            <input type="checkbox" id="checkbox" />
-            <label for="promocode">Ajouter un code de reduction</label>
-            <input type="text" id="promocode" />
-          </div>
-
-          <div class="checkout">
-            <a
-              class="shopping-cart-btn text-uppercase"
-              id="checkout-btn"
-              href="#"
-              >valider mon panier</a
-            >
+          <div class="online-benefits">
+            <h3 class="text-uppercase">Vos Services</h3>
+            <ul>
+              <li><i class="fas fa-shipping-fast"></i> Livraison offerte</li>
+              <li><i class="fas fa-undo"></i> Retours sous 14 jours</li>
+              <li>
+                <i class="far fa-credit-card"></i> Paiement par carte bancaire
+                et PayPal
+              </li>
+              <li><i class="fas fa-lock"></i> Paiement 100% securise</li>
+            </ul>
           </div>
         </div>
-      </div>
-      <!--COLUMN ONE ENDING DIV-->
-
-      <!--BEGINNING OF COLUMN TWO/DELIVERY & ONLINE BENEFITS SECTION -->
-      <div class="column-two">
-        <div class="delivery-options">
-          <h3 class="text-uppercase">Options de livraison</h3>
-          <p>Selon le stock nous offrons deux possibilités de commande:</p>
-          <ul>
-            <li>
-              <i class="fas fa-calendar-alt"></i>Commande en ligne 6-8 semaines
-              apres paiement
-            </li>
-            <li>
-              <i class="fas fa-handshake"></i>
-              Commande a la boutique du distributeur. Depend du stock.
-            </li>
-          </ul>
-        </div>
-        <div class="online-benefits">
-          <h3 class="text-uppercase">Vos Services</h3>
-          <ul>
-            <li><i class="fas fa-shipping-fast"></i> Livraison offerte</li>
-            <li><i class="fas fa-undo"></i> Retours sous 14 jours</li>
-            <li>
-              <i class="far fa-credit-card"></i> Paiement par carte bancaire et
-              PayPal
-            </li>
-            <li><i class="fas fa-lock"></i> Paiement 100% securise</li>
-          </ul>
-        </div>
-      </div>
+      </section>
     </main>
 
     <footer class="wrapper">

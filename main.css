@@ -451,6 +451,10 @@ video {
   margin: 0 auto;
 }
 
+.modal-cols h3 {
+  margin-top: 0;
+}
+
 .modal-exit {
   text-align: right;
   margin-right: 5px;
@@ -523,7 +527,7 @@ video {
   align-items: center;
   background-color: white;
   color: #978683;
-  padding: 20px 50px;
+  /* padding: 20px 50px; */
   height: 100vh;
 }
 
@@ -1255,6 +1259,15 @@ input {
     margin-top: 0;
   }
 
+  .product-details p {
+    font-size: 18px;
+  }
+
+  #diamond-weight {
+    width: 20%;
+    display: block;
+  }
+
   /*============================
   SHOPPING CART PREVIEW DESKTOP
   =============================*/
@@ -1555,8 +1568,8 @@ input {
   =============================*/
 
   .modal {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: fit-content;
   }
 
   .modal-cols {
@@ -1607,11 +1620,7 @@ input {
   ================================*/
 
   .signup-form {
-    position: fixed;
     width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1620,7 +1629,7 @@ input {
   .form-container {
     width: 50%;
     padding: 50px 100px;
-    height: 80vh;
+    height: 100vh;
   }
 
   .form-container h1 {
@@ -1629,6 +1638,11 @@ input {
 
   .form-container p {
     font-size: 18px;
+  }
+
+  .sal {
+    margin-bottom: 0;
+    width: 20%;
   }
 
   .name {
@@ -1876,5 +1890,15 @@ input {
   #cname,
   #ccnum {
     width: 100%;
+  }
+
+  .paypal-div {
+    border: none;
+    border-top: 1px solid #ecdfdc;
+    padding: 20px 14px;
+  }
+
+  .paypal-btn {
+    margin-top: 20px;
   }
 }
