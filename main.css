@@ -368,48 +368,126 @@ video {
  SHOPPING CART MOBILE PAGE
  ===========================*/
 
-.shopping-cart-main {
+.shopping-cart-wrapper {
+  background-color: white;
+  /* margin: 30px 20px; */
+  padding: 20px;
+  /* color: #c5b8b5; */
+  color: #9c928f;
+}
+
+.hide-on-mobile {
   display: none;
 }
 
-.mobile-cart-page {
-  background-color: white;
-  padding: 50px 0;
-}
-
-.card {
-  color: white;
-  background-color: #c5b8b5;
-  margin: 10px 30px;
-  padding: 20px;
-}
-
-.card-cols {
+.test-mobile-layout {
   display: flex;
-  justify-content: space-around;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  width: 900px;
+}
+
+.product-description h5 {
+  font-size: 16px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.product-description span {
+  margin-bottom: 5px;
+}
+
+.line-item {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  font-size: 14px;
 }
 
-.card-col-1 img {
-  width: 80px;
+.line-item:nth-of-type(3) {
+  border-top: 1px solid #c5b8b5;
 }
 
-.card-col-2 span {
-  display: block;
+.line-item-middle {
+  margin-bottom: 10px;
 }
 
-.card-col-2 h5 {
+#item-qty-mobile {
+  width: 30%;
+}
+
+.discount-section {
+  display: flex;
+  align-items: flex-start;
+  /* padding-top: 20px; */
+}
+
+#promocode {
+  margin: 0 0 20px 3px;
+  border: 1px solid #c5b8b5;
+}
+
+#checkbox {
+  margin: 7px 7px 0 0;
+}
+
+.cart-btn-mobile {
+  background-color: #c5b8b5;
+  color: white;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.arrow-cart {
+  border: solid #c5b8b5;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  padding: 3px;
+}
+
+.cart-upper-header {
+  margin: 20px 0 30px;
+}
+
+.cart-upper-header a {
+  color: #c5b8b5;
+  font-size: 12px;
+}
+
+.checkout {
+  margin: 10px 0 50px;
+}
+
+.cart-ship {
   margin: 0;
 }
 
-.mobile-cart-upper {
-  background: white;
-  color: #c5b8b5;
-  margin: 0 30px;
+.subtotal {
+  display: none;
 }
 
-.mobile-cart-upper a {
-  color: #c5b8b5;
+.line-item:nth-of-type(1) {
+  border-top: 1px solid #c5b8b5;
+  margin-top: 50px;
+}
+
+.delivery-options li,
+.online-benefits li {
+  margin-bottom: 5px;
+}
+
+.online-benefits {
+  margin-top: 40px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 /*============================
@@ -1367,12 +1445,9 @@ input {
   /*============================
   SHOPPING CART PAGE DESKTOP
   =============================*/
-  .mobile-cart-page {
-    display: none;
-  }
 
-  .text-uppercase {
-    text-transform: uppercase;
+  .hide-on-mobile {
+    display: block;
   }
 
   .shopping-cart-main {
@@ -1382,10 +1457,8 @@ input {
   }
 
   .shopping-cart-wrapper {
-    background-color: white;
     margin: 100px 200px;
     padding: 30px 50px;
-    color: #c5b8b5;
   }
 
   .column-one {
@@ -1400,7 +1473,7 @@ input {
   }
 
   .cart-upper-header a {
-    color: #c5b8b5;
+    font-size: 16px;
   }
 
   .cart-upper-header a:hover {
@@ -1416,10 +1489,13 @@ input {
 
   .shopping-cart-btn {
     font-weight: bold;
-    border: 2px solid #c5b8b5;
+    border: 1px solid #c5b8b5;
     color: #c5b8b5;
     padding: 5px 15px;
-    text-align: center;
+  }
+
+  .cart-btn-mobile {
+    background-color: white;
   }
 
   .shopping-cart-btn:hover {
@@ -1461,6 +1537,7 @@ input {
 
   .subtotal {
     width: 20%;
+    display: block;
   }
 
   .delete-product {
@@ -1471,10 +1548,6 @@ input {
     margin-bottom: 50px;
   }
 
-  .line-item-middle {
-    border-bottom: 1px solid #c5b8b5;
-  }
-
   .products h5 {
     margin: 0 0 20px;
   }
@@ -1482,12 +1555,16 @@ input {
   .products ul {
     display: flex;
     justify-content: space-around;
-    align-items: center;
   }
 
   .product-title img {
     width: 50px;
     margin-right: 20px;
+  }
+
+  .line-item,
+  .product-title span {
+    font-size: 14px;
   }
 
   .product-title span {
@@ -1499,6 +1576,7 @@ input {
     outline: none;
     color: white;
     border-color: white;
+    width: 60%;
   }
 
   .column-two {
@@ -1529,15 +1607,11 @@ input {
   .cart-ship,
   .cart-total {
     width: 75%;
+    font-size: 14px;
   }
 
   .cart-sub-ship {
     border-top: 1px solid #c5b8b5;
-  }
-
-  .line-item {
-    display: flex;
-    align-items: center;
   }
 
   .cart-totals h5 {
@@ -1551,16 +1625,22 @@ input {
   #promocode {
     display: block;
     outline: none;
+    margin: 0;
   }
 
   .cart-bottom {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     margin-top: 70px;
   }
 
   #checkout-btn {
     display: inline-block;
+  }
+
+  .hide-on-desktop {
+    visibility: hidden;
   }
 
   /*============================

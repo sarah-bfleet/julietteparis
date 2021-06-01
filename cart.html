@@ -46,36 +46,7 @@
       </div>
     </header>
 
-    <!-- SHOPPING CART FOR MOBILE  -->
-
-    <div class="mobile-cart-page">
-      <div class="mobile-cart-upper">
-        <a href="#">
-          <span class="text-uppercase">
-            <i class="arrow-cart left"></i>Continue Shopping</span
-          >
-        </a>
-        <h1>Shopping Cart</h1>
-      </div>
-
-      <div class="card">
-        <i class="fas fa-times"></i>
-        <div class="card-cols">
-          <div class="card-col-1">
-            <img src="img/ring-cart.jpg" alt="" />
-          </div>
-          <div class="card-col-2">
-            <h5 class="text-uppercase">Ring Sweet Paris</h5>
-            <span>980 &euro;</span>
-            <span>Pink gold</span>
-            <span>Total weight of diamonds: ___ </span>
-            <span>Size: </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SHOPPING CART FOR DESKTOP -->
+    <!-- SHOPPING CART  -->
 
     <main class="shopping-cart-wrapper">
       <div class="shipping-header">
@@ -101,19 +72,21 @@
               >
             </a>
 
-            <a class="shopping-cart-btn text-uppercase" href="shipping.html"
+            <a
+              class="shopping-cart-btn text-uppercase hide-on-mobile"
+              href="shipping.html"
               >Proceed to Checkout</a
             >
           </div>
 
           <div class="products-container">
-            <h1 class="text-uppercase">Checkout Cart</h1>
+            <h1 class="text-uppercase hide-on-mobile">Checkout Cart</h1>
             <div class="product-header text-uppercase">
-              <h5 class="product-title">Product</h5>
-              <h5 class="product-price">Price</h5>
-              <h5 class="product-qty">Qty</h5>
-              <h5 class="subtotal">Subtotal</h5>
-              <h5 class="delete-product">Del</h5>
+              <h5 class="product-title hide-on-mobile">Product</h5>
+              <h5 class="product-price hide-on-mobile">Price</h5>
+              <h5 class="product-qty hide-on-mobile">Qty</h5>
+              <h5 class="subtotal hide-on-mobile">Subtotal</h5>
+              <h5 class="delete-product hide-on-mobile">Del</h5>
             </div>
 
             <!-- SHOPPING CART ITEMS
@@ -121,82 +94,56 @@
             <div class="products">
               <ul>
                 <li class="product-title">
-                  <div class="product-img-div">
-                    <img src="img/ring-cart.jpg" alt="" />
-                  </div>
+                  <div class="test-mobile-layout">
+                    <div class="product-img-div">
+                      <img src="img/ring-cart.jpg" alt="" />
+                    </div>
 
-                  <div class="product-description">
-                    <h5 class="text-uppercase">Ring Sweet Paris</h5>
-                    <span>Pink gold</span>
-                    <span>Total weight of diamonds: ___ </span>
-                    <span>Size: </span>
+                    <div class="product-description">
+                      <h5 class="text-uppercase">Ring Sweet Paris</h5>
+                      <span>Pink gold</span>
+                      <span>Total weight of diamonds: ___ </span>
+                      <span>Size: </span>
+                      <span class="hide-on-desktop">980.00 &euro;</span>
+
+                      <div class="item-qty-div">
+                        <label for="item-qty-mobile" class="hide-on-desktop"
+                          >Qty:</label
+                        >
+                        <select
+                          name="qty"
+                          id="item-qty-mobile"
+                          class="hide-on-desktop"
+                        >
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="delete">delete</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
                 </li>
-                <li class="product-price">980.00 &euro;</li>
-                <li class="product-qty">
+
+                <li class="product-price hide-on-mobile">980.00 &euro;</li>
+                <li class="product-qty hide-on-mobile">
                   <select name="qty" id="item-qty">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
+                    <option value="delete">delete</option>
                   </select>
                 </li>
+
                 <li class="subtotal">980.00 &euro;</li>
-                <li class="delete-product"><i class="fas fa-times"></i></li>
+                <li class="delete-product hide-on-mobile">
+                  <i class="fas fa-times"></i>
+                </li>
               </ul>
-              <!-- <ul>
-              <li class="product-title">
-                <div class="product-img-div">
-                  <img src="img/ring-cart.jpg" alt="" />
-                </div> -->
-
-              <!-- <div class="product-description">
-                  <h5 class="text-uppercase">Ring Sweet Paris</h5>
-                  <span>Pink gold</span>
-                  <span>Total weight of diamonds: ___ </span>
-                  <span>Size: </span>
-                </div>
-              </li>
-              <li class="product-price">980.00 &euro;</li>
-              <li class="product-qty">
-                <select name="qty" id="item-qty">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </li>
-              <li class="subtotal">980.00 &euro;</li>
-              <li class="delete-product"><i class="fas fa-times"></i></li>
-            </ul>
-            <ul>
-              <li class="product-title">
-                <div class="product-img-div">
-                  <img src="img/ring-cart.jpg" alt="" />
-                </div>
-
-                <div class="product-description">
-                  <h5 class="text-uppercase">Ring Sweet Paris</h5>
-                  <span>Pink gold</span>
-                  <span>Total weight of diamonds: ___ </span>
-                  <span>Size: </span>
-                </div>
-              </li>
-              <li class="product-price">980.00 &euro;</li>
-              <li class="product-qty">
-                <select name="qty" id="item-qty">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </li>
-              <li class="subtotal">980.00 &euro;</li>
-              <li class="delete-product"><i class="fas fa-times"></i></li>
-            </ul> -->
             </div>
             <!--SHOPPING CART ITEMS ENDING DIV-->
           </div>
@@ -225,14 +172,18 @@
 
           <div class="cart-bottom">
             <div class="discount-section">
-              <input type="checkbox" id="checkbox" />
-              <label for="promocode">Apply Discount Code</label>
-              <input type="text" id="promocode" />
+              <div class="discount-row-1">
+                <input type="checkbox" id="checkbox" />
+              </div>
+              <div class="discount-row-2">
+                <label for="promocode">Apply Discount Code</label>
+                <input type="text" id="promocode" />
+              </div>
             </div>
 
             <div class="checkout">
               <a
-                class="shopping-cart-btn text-uppercase"
+                class="shopping-cart-btn text-uppercase cart-btn-mobile"
                 id="checkout-btn"
                 href="shipping.html"
                 >Proceed to Checkout</a
