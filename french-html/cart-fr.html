@@ -46,35 +46,6 @@
       </div>
     </header>
 
-    <!-- SHOPPING CART FOR MOBILE  -->
-
-    <div class="mobile-cart-page">
-      <div class="mobile-cart-upper">
-        <a href="#">
-          <span class="text-uppercase">
-            <i class="arrow-cart left"></i>Continue Shopping</span
-          >
-        </a>
-        <h1>Shopping Cart</h1>
-      </div>
-
-      <div class="card">
-        <i class="fas fa-times"></i>
-        <div class="card-cols">
-          <div class="card-col-1">
-            <img src="../img/ring-cart.jpg" alt="" />
-          </div>
-          <div class="card-col-2">
-            <h5 class="text-uppercase">Ring Sweet Paris</h5>
-            <span>980 &euro;</span>
-            <span>Pink gold</span>
-            <span>Total weight of diamonds: ___ </span>
-            <span>Size: </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- SHOPPING CART FOR DESKTOP -->
 
     <main class="shopping-cart-wrapper">
@@ -109,11 +80,11 @@
           <div class="products-container">
             <h1 class="text-uppercase">Panier</h1>
             <div class="product-header text-uppercase">
-              <h5 class="product-title">Produit</h5>
-              <h5 class="product-price">Prix</h5>
-              <h5 class="product-qty">Qte</h5>
-              <h5 class="subtotal">Sous-total</h5>
-              <h5 class="delete-product">Suppr</h5>
+              <h5 class="product-title hide-on-mobile">Produit</h5>
+              <h5 class="product-price hide-on-mobile">Prix</h5>
+              <h5 class="product-qty hide-on-mobile">Qte</h5>
+              <h5 class="subtotal hide-on-mobile">Sous-total</h5>
+              <h5 class="delete-product hide-on-mobile">Suppr</h5>
             </div>
 
             <!-- SHOPPING CART ITEMS
@@ -121,85 +92,78 @@
             <div class="products">
               <ul>
                 <li class="product-title">
-                  <div class="product-img-div">
-                    <img src="../img/ring-cart.jpg" alt="" />
-                  </div>
+                  <div class="test-mobile-layout">
+                    <div class="product-img-div">
+                      <img src="../img/ring-cart.jpg" alt="" />
+                    </div>
 
-                  <div class="product-description">
-                    <h5 class="text-uppercase">Bague Sweet Paris</h5>
-                    <span>Or rose</span>
-                    <span>Poids total des diamants: ___ </span>
-                    <span>Size: </span>
+                    <div class="product-description">
+                      <h5 class="text-uppercase">Bague Sweet Paris</h5>
+                      <span>Or rose</span>
+                      <span>Poids total des diamants: ___ </span>
+                      <span>Référence:</span>
+
+                      <div class="item-qty-div">
+                        <label for="size">Taille:</label>
+                        <select name="size" id="size">
+                          <option value="47">47</option>
+                          <option value="48">48</option>
+                          <option value="49">49</option>
+                          <option value="50">50</option>
+                          <option value="51">51</option>
+                          <option value="52">52</option>
+                          <option value="53">53</option>
+                          <option value="54">54</option>
+                          <option value="55">55</option>
+                          <option value="56">56</option>
+                          <option value="57">57</option>
+                          <option value="58">58</option>
+                        </select>
+                      </div>
+
+                      <span class="hide-on-desktop">980.00 &euro;</span>
+                      <div class="item-qty-div">
+                        <label for="item-qty-mobile" class="hide-on-desktop"
+                          >Qty:</label
+                        >
+                        <select
+                          name="qty"
+                          id="item-qty-mobile"
+                          class="hide-on-desktop"
+                        >
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="delete">delete</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
                 </li>
-                <li class="product-price">980.00 &euro;</li>
-                <li class="product-qty">
+
+                <li class="product-price hide-on-mobile">980.00 &euro;</li>
+                <li class="product-qty hide-on-mobile">
                   <select name="qty" id="item-qty">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
+                    <option value="delete">delete</option>
                   </select>
                 </li>
+
                 <li class="subtotal">980.00 &euro;</li>
-                <li class="delete-product"><i class="fas fa-times"></i></li>
+                <li class="delete-product hide-on-mobile">
+                  <i class="fas fa-times"></i>
+                </li>
               </ul>
-              <!-- <ul>
-              <li class="product-title">
-                <div class="product-img-div">
-                  <img src="img/ring-cart.jpg" alt="" />
-                </div> -->
-
-              <!-- <div class="product-description">
-                  <h5 class="text-uppercase">Ring Sweet Paris</h5>
-                  <span>Pink gold</span>
-                  <span>Total weight of diamonds: ___ </span>
-                  <span>Size: </span>
-                </div>
-              </li>
-              <li class="product-price">980.00 &euro;</li>
-              <li class="product-qty">
-                <select name="qty" id="item-qty">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </li>
-              <li class="subtotal">980.00 &euro;</li>
-              <li class="delete-product"><i class="fas fa-times"></i></li>
-            </ul>
-            <ul>
-              <li class="product-title">
-                <div class="product-img-div">
-                  <img src="img/ring-cart.jpg" alt="" />
-                </div>
-
-                <div class="product-description">
-                  <h5 class="text-uppercase">Ring Sweet Paris</h5>
-                  <span>Pink gold</span>
-                  <span>Total weight of diamonds: ___ </span>
-                  <span>Size: </span>
-                </div>
-              </li>
-              <li class="product-price">980.00 &euro;</li>
-              <li class="product-qty">
-                <select name="qty" id="item-qty">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </li>
-              <li class="subtotal">980.00 &euro;</li>
-              <li class="delete-product"><i class="fas fa-times"></i></li>
-            </ul> -->
             </div>
             <!--SHOPPING CART ITEMS ENDING DIV-->
           </div>
+
           <!-- PRODUCTS CONTAINER ENDING DIV -->
 
           <!-- BEGIN CART TOTALS -->
@@ -210,12 +174,19 @@
             </div>
 
             <div class="line-item line-item-middle">
-              <h5 class="cart-ship">
-                Livraison (Transporteur France Express - France ET Europe)
-              </h5>
+              <h5 class="cart-ship">Livraison</h5>
               <span>Offert</span>
             </div>
 
+            <div class="line-item line-item-middle">
+              <h5 class="cart-ship">TVA (20%)</h5>
+              <span>327 &euro;</span>
+            </div>
+
+            <div class="line-item">
+              <h5 class="cart-total">Total HT</h5>
+              <span>1633 &euro;</span>
+            </div>
             <div class="line-item">
               <h5 class="cart-total">Total TTC</h5>
               <span>1960 &euro;</span>

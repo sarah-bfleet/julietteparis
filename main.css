@@ -88,7 +88,7 @@ textarea {
 }
 
 /* ==========================================================================
-     Author's custom styles
+     Author's custom styles - MOBILE 
      ========================================================================= */
 * {
   box-sizing: border-box;
@@ -150,7 +150,7 @@ img {
 }
 
 /* ====================================
-    HEADER 
+    HEADER - MOBILE 
 =================================== */
 header {
   text-align: center;
@@ -203,7 +203,7 @@ nav li {
 }
 
 /* ====================================
-      FOOTER 
+      FOOTER - MOBILE 
 =================================== */
 
 footer {
@@ -286,7 +286,7 @@ address a:hover {
 }
 
 /*=========================
-  TAILORED PAGE
+  TAILORED PAGE - MOBILE
   ==========================*/
 
 video {
@@ -295,9 +295,9 @@ video {
   margin-bottom: 50px;
 }
 
-/*==========================
- SHOPPING CART MOBILE PREVIEW 
- ===========================*/
+/*======================================
+ SHOPPING CART MOBILE PREVIEW - MOBILE
+ ======================================*/
 
 .shopping-cart {
   display: none;
@@ -370,9 +370,7 @@ video {
 
 .shopping-cart-wrapper {
   background-color: white;
-  /* margin: 30px 20px; */
   padding: 20px;
-  /* color: #c5b8b5; */
   color: #9c928f;
 }
 
@@ -416,18 +414,23 @@ video {
   margin-bottom: 10px;
 }
 
-#item-qty-mobile {
+#item-qty-mobile,
+#size {
   width: 30%;
+}
+
+.cart-totals h5 {
+  margin: 8px 0;
 }
 
 .discount-section {
   display: flex;
   align-items: flex-start;
-  /* padding-top: 20px; */
+  margin: 30px 0;
 }
 
 #promocode {
-  margin: 0 0 20px 3px;
+  /* margin: 0 0 20px 3px; */
   border: 1px solid #c5b8b5;
 }
 
@@ -490,9 +493,9 @@ video {
   text-transform: uppercase;
 }
 
-/*============================
-        MODAL 
-  =============================*/
+/*=====================================
+  MODAL - CREATE ACCT/SIGN IN - MOBILE
+  ====================================*/
 
 .modal-bg {
   position: fixed;
@@ -593,9 +596,9 @@ video {
   font-weight: bolder;
 }
 
-/*===============================
-      FORM - CREATE ACCOUNT PAGE 
-  ================================*/
+/*==========================================
+      FORM - CREATE ACCOUNT PAGE - MOBILE
+  =========================================*/
 
 .signup-form {
   font-size: 14px;
@@ -605,8 +608,8 @@ video {
   align-items: center;
   background-color: white;
   color: #978683;
-  /* padding: 20px 50px; */
-  height: 100vh;
+  padding: 20px 30px;
+  height: fit-content;
 }
 
 .form-container h1 {
@@ -646,12 +649,16 @@ select {
 }
 
 #first-name {
-  width: 75%;
+  width: 100%;
 }
 
 #last-name {
   width: 100%;
   margin-top: 5px;
+}
+
+hr.line-style {
+  margin: 30px 0;
 }
 
 .birthdate {
@@ -781,6 +788,10 @@ input.comment {
 
 .extra-info {
   margin: 5px 0 10px;
+}
+
+.shipping-checkbox-div {
+  display: flex;
 }
 
 .shipping-checkbox-div,
@@ -934,14 +945,16 @@ input {
   margin: 0 5px;
 }
 
-.credit-card-icon,
-.cc-icon {
+.credit-card-icon {
   border: 1px solid #d3d3d3;
-  padding: 5px 12px;
+
+  padding: 5px 17px;
+  margin: 0 5px;
 }
 
 .width1 {
   width: 20%;
+  font-weight: bolder;
 }
 
 .width2 {
@@ -958,6 +971,7 @@ input {
 
 .payment-checkbox {
   display: flex;
+  align-items: center;
 }
 
 .details-container li:nth-of-type(1) {
@@ -993,21 +1007,90 @@ input {
 .payment-method {
   background-color: white;
   color: #9c928f;
-  padding: 20px 50px 50px;
   margin-top: 30px;
+  font-size: 14px;
+  padding: 20px 20px 35px;
+}
+
+.payment-method h1 {
+  font-size: 20px;
+}
+
+.credit-card-checkbox {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d3d3d3;
+  padding: 5px 10px;
+}
+
+.hide-on-mobile::before {
+  display: none;
+}
+
+.cc-mobile {
+  border: 1px solid #d3d3d3;
+  padding: 5px 10px;
+  margin: 0 8px;
+}
+
+.same-address {
+  margin-top: 30px;
+  font-size: 14px;
 }
 
 .checkbox-inline {
   display: inline;
 }
 
-.same-address {
+.billing-address {
+  text-align: left;
+  margin: 10px 0 20px;
+}
+
+.row {
+  display: flex;
+  margin: 10px 0;
+}
+
+#cname,
+#ccnum,
+#expdate,
+#cvv {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #c5b8b5;
+}
+
+#cname,
+#ccnum {
+  width: 100%;
+}
+
+#cname {
+  margin: 2px 0 5px;
+}
+
+#expdate,
+#cvv {
+  width: 95%;
+}
+
+#cvv {
+  margin-left: auto;
+}
+
+#save-info-checkbox {
+  margin-top: 10px;
+}
+
+.accept-terms-div {
   margin-top: 30px;
+  font-size: 14px;
 }
 
 .btn {
   padding: 5px 20px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .btn:hover {
@@ -1015,18 +1098,18 @@ input {
   background-color: #c5b8b5;
 }
 
-.accept-terms-div {
-  margin-top: 30px;
+/*===============================
+      PAYPAL PAYMENT FORM - MOBILE  
+  ================================*/
+
+.credit-card-checkbox {
+  margin-bottom: 10px;
 }
 
-.billing-address {
-  text-align: left;
-  margin: 0 0 20px;
+.paypal-btn {
+  margin-top: 20px;
 }
 
-.cc-icon {
-  margin: 0 5px;
-}
 /* ====================================
      ==================================
        Media Queries - Smaller Tablet 
@@ -1579,6 +1662,10 @@ input {
     width: 60%;
   }
 
+  #size {
+    width: 10%;
+  }
+
   .column-two {
     margin: auto;
     width: 30%;
@@ -1614,12 +1701,9 @@ input {
     border-top: 1px solid #c5b8b5;
   }
 
-  .cart-totals h5 {
-    margin: 8px 0;
-  }
-
   .discount-section {
     font-size: 14px;
+    margin: 0;
   }
 
   #promocode {
@@ -1640,12 +1724,17 @@ input {
   }
 
   .hide-on-desktop {
+    display: none;
     visibility: hidden;
   }
 
-  /*============================
-        MODAL 
-  =============================*/
+  #cc-mobile {
+    display: none;
+  }
+
+  /*==========================================
+        MODAL - CREATE ACCT/SIGN IN - DESKTOP
+  ============================================*/
 
   .modal {
     width: 60%;
@@ -1695,9 +1784,9 @@ input {
     z-index: 2;
   }
 
-  /*===============================
-      FORM - CREATE ACCOUNT PAGE 
-  ================================*/
+  /*=========================================
+      FORM - CREATE ACCOUNT PAGE - DESKTOP
+  ============================================*/
 
   .signup-form {
     width: 100%;
@@ -1826,13 +1915,7 @@ input {
   }
 
   .payment-checkbox {
-    display: flex;
-    align-items: center;
     font-size: 12px;
-  }
-
-  .shipping-checkbox-div {
-    display: flex;
   }
 
   .payment-checkbox i {
@@ -1909,12 +1992,20 @@ input {
     display: flex;
   }
 
+  .credit-card-icon {
+    padding: 5px 12px;
+  }
+
   /*===============================
       CREDIT CARD FORM - DESKTOP 
   ================================*/
 
   .payment-method {
     font-size: 16px;
+    padding: 20px 50px 50px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 30px auto;
   }
 
   .payment-main {
@@ -1922,8 +2013,30 @@ input {
     padding-bottom: 20px;
   }
 
+  .credit-card-checkbox {
+    padding: 20px 14px;
+    font-size: 14px;
+    border: none;
+    margin-bottom: 0;
+  }
+
+  .hide-on-mobile::before {
+    display: block;
+  }
+
+  .cc-icon {
+    border: 1px solid #d3d3d3;
+    padding: 5px 12px;
+    margin: 0 5px;
+  }
+
   .border-upper {
     border-top: 1px solid #ecdfdc;
+  }
+
+  .same-address label,
+  .accept-terms-div {
+    font-size: 16px;
   }
 
   .add-space {
@@ -1934,51 +2047,17 @@ input {
     margin-left: 22px;
   }
 
-  .credit-card-checkbox {
-    padding: 20px 14px;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-  }
-
-  .row {
-    display: flex;
-  }
-
-  #expdate,
-  #cvv {
-    width: 95%;
-  }
-
-  #cvv {
-    margin-left: auto;
-  }
-
-  #cname,
-  #ccnum,
-  #expdate,
-  #cvv {
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid #c5b8b5;
-  }
-
   .cc-info-container {
     width: 30%;
   }
 
-  #cname,
-  #ccnum {
-    width: 100%;
-  }
+  /*===============================
+      PAYPAL PAYMENT FORM - DESKTOP 
+  ================================*/
 
   .paypal-div {
     border: none;
     border-top: 1px solid #ecdfdc;
     padding: 20px 14px;
-  }
-
-  .paypal-btn {
-    margin-top: 20px;
   }
 }
