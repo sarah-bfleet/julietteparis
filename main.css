@@ -1110,6 +1110,122 @@ input {
   margin-top: 20px;
 }
 
+/*===============================
+      RING PAGE - MOBILE  
+  ================================*/
+.accent-color {
+  color: #877e7c;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.uia-main-img {
+  margin: 30px 0;
+}
+
+.uia-img-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.uia-img-gallery img {
+  width: 100px;
+}
+
+.uia-img-3,
+.uia-main-img {
+  border: 1px solid #ad9d9a;
+}
+
+.uia-ring-main {
+  background-color: white;
+  color: #c6b8b5;
+  padding-bottom: 50px;
+}
+
+.uia-ring-main h1,
+#ring-price {
+  font-size: 20px;
+}
+
+#ring-price {
+  margin: 0;
+}
+
+.ring-collection-name {
+  font-size: 22px;
+  border-bottom: 1px solid #978683;
+}
+
+.uia-ring-main p,
+.ring-size-div,
+.uia-ring-description,
+.central-stone-size-label {
+  font-size: 14px;
+}
+
+.uia-ring-main a {
+  color: #978683;
+}
+
+.secondary-nav {
+  background-color: #f6f6f6;
+  padding: 5px 0;
+}
+
+.secondary-nav ul {
+  display: flex;
+  margin: 0 5px;
+}
+
+.secondary-nav li {
+  margin: 0 8px;
+}
+
+.secondary-nav a {
+  font-size: 10px;
+}
+
+.nav-li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 12px;
+}
+
+.cart-btn {
+  background-color: #978683;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.ring-size-div {
+  padding: 15px 0 35px;
+}
+
+.ring-size-div select,
+#central-stone-size {
+  border-radius: 4px;
+}
+
+.central-stone-pricing {
+  margin: 25px 0 15px;
+}
+
+.size-guide {
+  font-size: 12px;
+  text-decoration: underline;
+}
+
 /* ====================================
      ==================================
        Media Queries - Smaller Tablet 
@@ -2059,5 +2175,68 @@ input {
     border: none;
     border-top: 1px solid #ecdfdc;
     padding: 20px 14px;
+  }
+
+  /*===============================
+      RING PAGE - DESKTOP 
+  ================================*/
+  .uia-ring-cols {
+    display: flex;
+  }
+
+  .uia-ring-col1 {
+    margin-right: 30px;
+    width: 40%;
+  }
+
+  .uia-ring-col2 {
+    width: 50%;
+  }
+
+  .uia-ring-main h1,
+  #ring-price {
+    font-size: 22px;
+  }
+
+  .ring-collection-name {
+    font-size: 24px;
+  }
+
+  .uia-ring-main p,
+  .ring-size-div,
+  .uia-ring-description,
+  .central-stone-size-label {
+    font-size: 18px;
+  }
+
+  .secondary-nav a,
+  .size-guide {
+    font-size: 14px;
+  }
+
+  .uia-img-gallery img {
+    width: 150px;
+  }
+
+  .ring-size-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #ring-size,
+  #central-stone-size {
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+  }
+
+  .cart-btn {
+    width: 80%;
+  }
+
+  .cart-btn:hover {
+    background-color: white;
+    color: #877e87;
+    border: 1px solid #877e87;
+    cursor: pointer;
   }
 }
