@@ -1221,6 +1221,10 @@ input {
   border-radius: 4px;
 }
 
+.central-stone-size {
+  margin-bottom: 15px;
+}
+
 .central-stone-pricing {
   margin: 25px 0 15px;
 }
@@ -2242,6 +2246,15 @@ input {
   #central-stone-size {
     font-size: 16px;
     font-family: Montserrat, sans-serif;
+  }
+
+  .central-stone-size {
+    display: flex;
+  }
+
+  #central-stone-size {
+    width: 15%;
+    margin-left: 10px;
   }
 
   .cart-btn {
